@@ -1,0 +1,22 @@
+name = "telegram-image-hosting"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "dist"
+
+[[kv_namespaces]]
+binding = "app_data"
+id = "68461268f9c74d2a9e00f692076d6c84"
+preview_id = "69088be9ba19400983d1b14e3e74ecf5"
+
+[env.production]
+vars = { NODE_ENV = "production" }
+
+[[env.production.kv_namespaces]]
+binding = "app_data"
+id = "68461268f9c74d2a9e00f692076d6c84"
+
+[env.preview]
+vars = { NODE_ENV = "development" }
+
+[[env.preview.kv_namespaces]]
+binding = "app_data"
+id = "68461268f9c74d2a9e00f692076d6c84"
